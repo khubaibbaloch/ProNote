@@ -21,7 +21,6 @@
 - **Language:** Kotlin
 - **UI:** Jetpack Compose
 - **Local Storage:** Room Database
-- **Architecture:** MVVM
 - **State Management:** ViewModel + StateFlow
 - **Navigation:** Jetpack Navigation Compose
 
