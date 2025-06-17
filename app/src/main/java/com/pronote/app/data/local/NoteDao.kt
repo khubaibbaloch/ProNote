@@ -13,16 +13,11 @@ interface NoteDao {
     @Query("SELECT * FROM note")
     fun getAll(): Flow<List<Note>>
 
-    @Query("SELECT * FROM note WHERE id IN (:userIds)")
-    fun loadAllByIds(userIds: IntArray): List<Note>
-
     @Query("SELECT * FROM note WHERE title LIKE '%' || :query || '%'")
     fun findByTitle(query: String): Flow<List<Note>>
 
     @Query("SELECT * FROM note WHERE id = :id")
     fun getNoteById(id: Int): Flow<Note?>
-
-
 
     @Update
     suspend fun updateNote(note: Note)

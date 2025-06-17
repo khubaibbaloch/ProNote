@@ -135,7 +135,7 @@ fun AddNoteScreen(navController: NavController, mainViewmodel: MainViewmodel) {
                 .fillMaxSize()
                 .verticalScroll(rememberScrollState())
         ) {
-            // Title input
+
             BasicTextField(
                 value = title,
                 onValueChange = { title = it },
@@ -159,7 +159,6 @@ fun AddNoteScreen(navController: NavController, mainViewmodel: MainViewmodel) {
                 }
             )
 
-            // Content input
             BasicTextField(
                 value = content,
                 onValueChange = { content = it },

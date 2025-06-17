@@ -162,14 +162,14 @@ fun HomeScreen(navController: NavController, mainViewmodel: MainViewmodel) {
                     Column(modifier = Modifier.padding(16.dp)) {
                         Text(
                             text = note.title,
-                            overflow = TextOverflow.Clip,
+                            overflow = TextOverflow.Ellipsis,
                             maxLines = 1,
                             style = MaterialTheme.typography.titleLarge
                         )
                         Spacer(modifier = Modifier.height(4.dp))
                         Text(
                             text = note.content,
-                            overflow = TextOverflow.Clip,
+                            overflow = TextOverflow.Ellipsis,
                             maxLines = 1,
                             style = MaterialTheme.typography.bodyMedium
                         )

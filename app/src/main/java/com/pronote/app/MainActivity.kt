@@ -41,9 +41,9 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             ProNoteTheme {
-                Surface( // 👈 wrap with Surface or Box to apply background
+                Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background // applies your theme's bg
+                    color = MaterialTheme.colorScheme.background
                 ) {
                     val navController = rememberNavController()
                     RootNavHost(navHostController = navController, mainViewmodel = viewModel)

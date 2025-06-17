@@ -19,7 +19,7 @@ import kotlinx.coroutines.launch
 class MainViewmodel(private val repository: NoteRepository) : ViewModel() {
 
     private val _searchQuery = MutableStateFlow("")
-    val searchQuery: StateFlow<String> = _searchQuery
+   // val searchQuery: StateFlow<String> = _searchQuery
 
     @OptIn(ExperimentalCoroutinesApi::class)
     val notes: StateFlow<List<Note>> = _searchQuery
